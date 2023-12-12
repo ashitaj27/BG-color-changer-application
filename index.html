@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG color changer</title>
+    <style>
+        #color-switcher{          
+            text-align: right;
+        }
+        .btn{
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: blueviolet;
+        }
+        #black{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        body{
+            padding: 20px;
+            margin: 0px 100px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">ABOUT US</h1>
+    <img src="images/maxresdefault.jpg">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate consequuntur tempore voluptatum, nostrum aut expedita. Assumenda nam, itaque tenetur esse nostrum, beatae, maxime nihil vero laudantium vel hic magni.
+    </p>
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if (color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>
